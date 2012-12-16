@@ -63,10 +63,11 @@ h1 {
 #fixhead {
   position: fixed;
   top: 0;
+  left: 0;
   height: 83px;
   width: 100%;
   background: #b41e50 url(../images/redbar.jpg) repeat-x;
-  box-shadow: 0 1px 10px #888;
+  box-shadow: 0 1px 10px #2d343a;
   z-index: 1; }
 
 #fixhead:after {
@@ -83,37 +84,54 @@ h1 {
 #col-onethird {
   background: url(../images/product.jpg) no-repeat 5px 2px;
   float: left;
-  z-index: 1;
-  width: 100px; }
+  z-index: 1; }
 
 #col-twothird {
-  width: 400px;
-  margin-left: 100px; }
+  float: right;
+  width: auto; }
 
 #col-second {
   float: left;
-  width: 200px; }
+  width: auto;
+  padding-right: 30px; }
+  #col-second h4 {
+    color: white;
+    margin-top: 20px;
+    text-shadow: -1px -1px #888888; }
+  #col-second p {
+    line-height: 0.5;
+    color: white; }
 
 #col-last {
   float: right;
-  width: 100px;
-  text-align: right; }
-
-.button span {
-  height: 30px;
-  width: 10px;
-  margin-right: 10px; }
+  width: 80px;
+  text-align: right;
+  padding-right: 10px; }
+  #col-last h3 {
+    color: #5aa096;
+    text-shadow: -1.5px -1.5px #444444;
+    text-align: center;
+    margin: 5px auto 1px; }
 
 .button {
-  margin-bottom: 0; }
-
-#accordion {
-  width: 100%; }
+  margin-bottom: 0;
+  text-transform: uppercase;
+  display: block;
+  padding: 6px 6px 6px 0px; }
+  .button span {
+    margin-right: 6px; }
+    .button span img {
+      padding-right: 6px;
+      padding-left: 0px;
+      border-right: 1px solid #888; }
 
 #footer {
   clear: both;
   padding: 10px;
   background: #ff9; }
+
+#accordion {
+  width: 100%; }
 
 .ui-helper-reset {
   margin: 0;
@@ -136,12 +154,16 @@ h1 {
 
 .ui-accordion {
   padding: 0; }
+  .ui-accordion li {
+    padding: 4px 0px 5px 10px;
+    background: url(../images/list-dot.jpg) no-repeat 1px 11px; }
 
 .ui-accordion-header {
   background: black url(../images/bar.jpg) repeat-x;
   padding: 1em;
   color: white;
-  box-shadow: 0 1px 10px #888; }
+  box-shadow: 0 1px 10px #2d343a;
+  text-shadow: 1px 1px #2d343a; }
 
 .ui-accordion-content {
   background: #c4cbd1; }
@@ -153,15 +175,14 @@ h1 {
   zoom: 1; }
 
 .ui-widget-content {
-  color: white; }
+  color: #2d343a;
+  text-shadow: 1px 1px white; }
 
 .flexslider {
   margin: 100px auto 0px;
   border: none;
   box-shadow: none;
   width: 100%; }
-  .flexslider li {
-    border-right: 1px solid #ccc; }
 
 .flex-direction-nav .flex-prev {
   opacity: 1;
