@@ -11,6 +11,10 @@
     #Font-Face */
 /* #Site Styles
 ================================================== */
+body {
+  background: #576878 url(../images/noise-120-50-10.png);
+  height: 100%; }
+
 h1, h2, h3, h4, p, span, li {
   -webkit-font-smoothing: antialiased; }
 
@@ -22,8 +26,7 @@ li {
   font-size: 12 px; }
 
 h1, h2, h3, h4 {
-  font-family: 'Rambla', Charcoal, sans-serif;
-  text-transform: uppercase; }
+  font-family: 'Rambla', 'Helvetica-Neue', sans-serif; }
 
 h1 {
   font-size: 60px; }
@@ -66,13 +69,13 @@ h1 {
   left: 0;
   height: 83px;
   width: 100%;
-  background: #b41e50 url(../images/redbar.jpg) repeat-x;
+  background: #b41e50 url(../images/redbar1.jpg) repeat-x;
   box-shadow: 0 1px 10px #2d343a;
   z-index: 1; }
 
 #fixhead:after {
   content: "";
-  background: url(../images/noise-120-50-10.png);
+  background: url(../images/noise-120-50-15.png);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -81,43 +84,47 @@ h1 {
   width: 100%;
   z-index: -1; }
 
-#col-onethird {
+#col-twothird {
   background: url(../images/product.jpg) no-repeat 5px 2px;
   float: left;
   z-index: 1; }
 
-#col-twothird {
-  float: right;
-  width: auto; }
+#round {
+  float: left; }
 
 #col-second {
-  float: left;
+  float: right;
   width: auto;
-  padding-right: 30px; }
+  padding-left: 10px; }
   #col-second h4 {
     color: white;
-    margin-top: 20px;
+    margin: 17px auto -5px;
     text-shadow: -1px -1px #888888; }
-  #col-second p {
-    line-height: 0.5;
+  #col-second strong {
+    line-height: 0;
     color: white; }
 
-#col-last {
+#col-onethird {
   float: right;
   width: 80px;
   text-align: right;
   padding-right: 10px; }
-  #col-last h3 {
-    color: #5aa096;
+  #col-onethird h4 {
+    color: white;
     text-shadow: -1.5px -1.5px #444444;
     text-align: center;
     margin: 5px auto 1px; }
+    #col-onethird h4 small {
+      font-size: 60%; }
 
 .button {
   margin-bottom: 0;
   text-transform: uppercase;
   display: block;
-  padding: 6px 6px 6px 0px; }
+  padding: 6px 6px 6px 0px;
+  text-decoration: none; }
+  .button a, .button a:link {
+    text-decoration: none; }
   .button span {
     margin-right: 6px; }
     .button span img {
@@ -125,13 +132,9 @@ h1 {
       padding-left: 0px;
       border-right: 1px solid #888; }
 
-#footer {
-  clear: both;
-  padding: 10px;
-  background: #ff9; }
-
 #accordion {
-  width: 100%; }
+  width: 100%;
+  clear: both; }
 
 .ui-helper-reset {
   margin: 0;
@@ -145,6 +148,30 @@ h1 {
 .ui-accordion, .ui-accordion-icons {
   padding-left: 2.2em; }
 
+.ui-icon {
+  background: url(../images/arrow-accordion.png) no-repeat;
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  margin-top: -5px;
+  float: right; }
+
+.ui-icon-circle-arrow-s {
+  background-position: 0 0; }
+
+.ui-icon-circle-arrow-s {
+  background-position: -30px 0; }
+
+.ui-menu-icons {
+  position: relative;
+  float: right; }
+
+.ui-menu-icons .ui-menu-item a {
+  position: relative; }
+
 .ui-accordion, .ui-accordion-header {
   display: block;
   cursor: pointer;
@@ -156,17 +183,23 @@ h1 {
   padding: 0; }
   .ui-accordion li {
     padding: 4px 0px 5px 10px;
-    background: url(../images/list-dot.jpg) no-repeat 1px 11px; }
+    background: url(../images/list-dot.jpg) no-repeat 1px 11px;
+    margin-bottom: 0px;
+    line-height: 12px!important; }
 
 .ui-accordion-header {
   background: black url(../images/bar.jpg) repeat-x;
   padding: 1em;
   color: white;
+  color: #ccc;
   box-shadow: 0 1px 10px #2d343a;
-  text-shadow: 1px 1px #2d343a; }
+  text-shadow: 1px -1px #2d343a;
+  border-bottom: 1px solid black; }
 
 .ui-accordion-content {
   background: #c4cbd1; }
+  .ui-accordion-content p {
+    padding-top: 20px; }
 
 .ui-accordion .ui-accordion-content {
   padding: 1em 2.2em;
@@ -179,7 +212,7 @@ h1 {
   text-shadow: 1px 1px white; }
 
 .flexslider {
-  margin: 100px auto 0px;
+  margin: 80px auto -30px;
   border: none;
   box-shadow: none;
   width: 100%; }
@@ -202,6 +235,18 @@ h1 {
 
 .flex-direction-nav a {
   z-index: 0!important; }
+
+#footer {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  background: #576878;
+  bottom: 0;
+  z-index: -1; }
+  #footer p {
+    text-align: center;
+    color: #2d343a;
+    line-height: 2; }
 
 /* #Media Queries
 ================================================== */
