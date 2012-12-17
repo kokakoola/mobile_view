@@ -273,7 +273,17 @@ h1 {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   #resize {
-    display: none; } }
+    display: none; }
+
+  #grunge img {
+    width: 100%; }
+
+  #wrapper h1 {
+    font-size: 3.5em; }
+
+  h3 {
+    font-size: 2em;
+    text-align: right; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 /* #Font-Face
